@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4ItnHpJivB6Xyu0_DQnY43uFV1cNKc7TaA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.header {
+    background-color: white;
+}
+
+div.logo, .logo {
+    display: block;
+    float: left;
+    overflow: visible;
+    width: 50%;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+h1 {
+    color: rgb(209, 23, 23);
+    margin: 0;
+    padding: 1%;
+    font-size: 400%;
+}
+
+div.column1, div.column3 {
+    display: block;
+    float: left;
+    width: 30%;
+    height: 540px;
+}
+
+div.column2 {
+    display: block;
+    float: left;
+    width: 40%;
+    height: 540px;
+}
+
+div.div0 {
+    display: block;
+    background-image: url(Photos/Photo1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 540px;
+    width: 100%;
+}
+
+div.div1 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 15%;
+}
+
+div.div2 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 10%;
+}
+
+div.div3 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 10%;
+}
+
+div.div4 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 10%;
+}
+
+div.div5 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 10%;
+}
+
+div.div6 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 10%;
+}
+
+div.div7 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 10%;
+}
+
+div.div8 {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #828b8659;
+    border-radius: 30px;
+    padding: 10%;
+}
+
+.box1, .box2, .box3, .box4 {
+    display: block;
+    border-top-right-radius: 20px;
+    margin-right: 20%;
+    height: 60px;
+    background-color: rgb(209, 23, 23);
+    align-content: center;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 200%;
+    cursor: pointer;
+    color: white;
+}
+
+.box5, .box6, .box7, .box8 {
+    display: block;
+    border-top-left-radius: 20px;
+    margin-left: 20%;
+    height: 60px;
+    background-color: rgb(209, 23, 23);
+    align-content: center;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 200%;
+    cursor: pointer;
+    color: white;
+}
+
+div.balance {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-top: 5%;
+    border-radius: 30px;
+    align-items: center;
+    background-color: white;
+    width: 50%;
+    height: 400px;
+}
+
+label {
+    color: rgb(226, 77, 77);
+    font-size: 150%;
+}
+
+input.pin {
+    font-size: 15px;
+    border-color: black;
+    width: 30%;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #f7f2f2;
+}
+
+input.pin::placeholder {
+    font-size: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #888;
+}
+
+button.Btn {
+    text-align: center;
+    font-size: 130%;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background-color: rgb(6, 190, 6);
+    width: 100%;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+div.pinBtn {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    overflow: visible;
+}
+
+
+input.withdrawl {
+    font-size: 15px;
+    border-color: black;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #f7f2f2;
+
+}
+
+form > div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.column2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
