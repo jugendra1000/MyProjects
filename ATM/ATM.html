@@ -26,20 +26,23 @@
         <div class="div1" id="div1">
             <form>
                 <div class="content">
-                    <label>Enter your ATM Pin</label><br>
-                    <input type="password" class="pin" maxlength="4" placeholder="Enter PIN">
+                    <input type="text" class="container" id="balance" placeholder="Enter Debit Card Number" maxlength="16">
+                    <b id="msgb1"></b>
+                    <p id="msgp1"></p>
+                    <input type="password" class="pin" id="pin1" maxlength="4" placeholder="Enter PIN" style="display: none;">
                 </div>
             </form>
             <div class="pinBtn">
-                <button class="Btn" id="Btn1">Done</button>
+                <button class="Btn" id="Btn1">Proceed</button>
+                <button class="Btn" id="Btn01" style="display: none;">Done</button><br>
                 <p id="msg1"></p>
             </div>
         </div>
         <div class="div2" id="div2">
             <form>
                 <div class="content">
-                    <input type="" class="container" id="withdrawl" placeholder="Enter withdrawl amount">
-                    <input type="password" class="pin" maxlength="4" placeholder="Enter PIN">
+                    <input type="text" class="container" id="withdrawl" placeholder="Enter withdrawl amount">
+                    <input type="password" class="pin" id="pin2" maxlength="4" placeholder="Enter PIN">
                 </div>
             </form>
             <div class="pinBtn">
@@ -50,8 +53,8 @@
         <div class="div3" id="div3">
             <form>
                 <div class="content">
-                    <input type="number" class="container" id="deposit" placeholder="Enter deposit amount">
-                    <input type="password" class="pin" maxlength="4" placeholder="Enter PIN" >
+                    <input type="text" class="container" id="deposit" placeholder="Enter deposit amount">
+                    <input type="password" class="pin" id="pin3" maxlength="4" placeholder="Enter PIN" >
                 </div>
             </form>
             <div class="pinBtn">
@@ -76,8 +79,12 @@
         <div class="div5" id="div5">
             <form>
                 <div class="content">
-                    <input type="number" class="container" placeholder="Enter transfer amount">
-                    <input type="password" class="pin" maxlength="4" placeholder="Enter PIN" >
+                    <select name="miniStm" id="miniStm" class="select">
+                        <option value="select">--select bank account--</option>
+                        <option value="saving">Jugendra Kashyap (Saving A/c)</option>
+                        <option value="saving">Jugendra Kashyap (Current A/c)</option>
+                        <option value="saving">Jugendra Kashyap (Salary A/c)</option>
+                    </select>
                 </div>
             </form>
             <div class="pinBtn">
@@ -87,8 +94,9 @@
         <div class="div6" id="div6">
             <form>
                 <div class="content">
-                    <input type="number" class="container" placeholder="Enter Enquiry amount">
-                    <input type="password" class="pin" maxlength="4" placeholder="Enter PIN" >
+                    <input type="text" class="container" placeholder="Debit Card number" max="16">
+                    <input type="tel" class="container" id="phone" name="phone" placeholder="Enter Phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <input type="number" class="pin" maxlength="6" placeholder="Enter OTP" >
                 </div>
             </form>
             <div class="pinBtn">
@@ -98,9 +106,8 @@
         <div class="div7" id="div7">
             <form>
                 <div class="content">
-                    <input type="number" class="container" placeholder="Debit Card number" max="16">
-                    <input type="tel" class="container" id="phone" name="phone" placeholder="Enter Phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                    <input type="number" class="pin" maxlength="6" placeholder="Enter OTP" >
+                    <input type="number" class="container" placeholder="Enter Enquiry amount">
+                    <input type="password" class="pin" maxlength="4" placeholder="Enter PIN" >
                 </div>
             </form>
             <div class="pinBtn">
@@ -110,7 +117,7 @@
         <div class="div8" id="div8">
             <form>
                 <div class="content">
-                    <select name="option" id="option" class="option">
+                    <select name="option" id="option" class="select">
                         <option value="">--select option--</option>
                         <option value="">Something</option>
                         <option value="">Anything else</option>
@@ -123,9 +130,9 @@
         </div>
     </div>
     <div class="column3">
-        <div class="box5" id="box5">Statement</div>
-        <div class="box6" id="box6">Enquiry</div>
-        <div class="box7" id="box7">Green Pin</div>
+        <div class="box5" id="box5">Mini Statement</div>
+        <div class="box6" id="box6">Green Pin</div>
+        <div class="box7" id="box7">Enquiry</div>
         <div class="box8" id="box8">Option</div>
     </div>
 </body>

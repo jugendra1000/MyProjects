@@ -104,24 +104,67 @@ box8.addEventListener("click", () => {
     div8.style.display = "flex";
 })
 
-let amount = 10000;
-amount = parseInt(amount)
+userData = {
+    name: "Jugendra Kashyap",
+    pin: 1234,
+    accountNumber: "xxxxxxxxxx5649",
+    balance: 10000,
+    debitCardNumber: 5555555555555555
+}
+userData.balance = parseInt(userData.balance, 10);
+
 Btn1.addEventListener("click", () => {
-    msg1.textContent = "Your bank balance is Rs." + amount;
+    if (balance.value == userData.debitCardNumber) {
+        msgb1.textContent = "Jugendra Kashyap";
+        msgp1.textContent = "A/c no. " + userData.accountNumber;
+        pin1.style.display = "block";
+        Btn1.style.display = "none";
+        Btn01.style.display = "block";
+    } else if (balance.value == 0) {
+        alert("Please fill Debit Card number");
+    } else {
+        alert("Please enter a valid Debit Card number.");
+    }
+})
+
+Btn01.addEventListener("click", () => {
+    if (pin1.value == userData.pin){
+        msg1.textContent = "Your bank balance is Rs." + userData.balance;
+    } else {
+        alert("Please enter a valid 4-digit PIN.");
+    }
 })
 
 Btn2.addEventListener("click", () => {
-    let withAmt = document.getElementById("withdrawl").value;
-    withAmt = parseInt(withAmt);
-    amount = amount - withAmt;
-    msg2.textContent = "Transaction Successful, your balance is Rs. " + amount;
+    withdrawl.value = parseInt(withdrawl.value, 10);
+    if (withdrawl.value%100 == 0 && pin2.value == userData.pin) {
+            userData.balance = userData.balance - withdrawl.value
+        msg2.textContent = "Transaction Successful, your balance is Rs. " + userData.balance;
+    } else if (withdrawl.value == 0) {
+        alert("Please fill withdrawing amount");
+    } else if (withdrawl.value%100 !== 0){
+        alert("Amount must be multiple of 100");
+    } else if (pin2.value == 0){
+        alert("Please enter PIN");
+    } else if (pin2.value !== userData.pin){
+        alert("Please enter correct PIN");
+    }
 })
 
-Btn3.addEventListener("click", ()=> {
-    let deposit = document.getElementById("deposit").value;
-    deposit = parseInt(deposit);
-    amount = amount + deposit;
-    msg3.textContent = "Transaction Successful, your balance is Rs. " + amount;
+Btn3.addEventListener("click", () => {
+    deposit.value = parseInt(deposit.value, 10);
+    if (deposit.value%100 == 0 && pin3.value == userData.pin) {
+        userData.balance = userData.balance + deposit.value
+        msg3.textContent = "Transaction Successful, your balance is Rs. " + userData.balance;
+    } else if (deposit.value == 0) {
+        alert("Please fill deposit amount");
+    } else if (deposit.value%100 !== 0){
+        alert("Amount must be multiple of 100");
+    } else if (pin3.value == 0){
+        alert("Please enter PIN");
+    } else if (pin3.value !== userData.pin){
+        alert("Please enter correct PIN");
+    }
 })
 
 
